@@ -1,0 +1,6 @@
+model_checkpoint_path: "best_model-4450"
+all_model_checkpoint_paths: "best_model-3890"
+all_model_checkpoint_paths: "best_model-3900"
+all_model_checkpoint_paths: "best_model-4430"
+all_model_checkpoint_paths: "best_model-4440"
+all_model_checkpoint_paths: "best_model-4450"

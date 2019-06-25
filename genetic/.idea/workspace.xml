@@ -1,0 +1,518 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="1b243e5f-f75e-40a0-84d8-cef745ab917a" name="Default Changelist" comment="changes">
+      <change afterPath="$PROJECT_DIR$/.idea/genetic.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finished/.idea/finished.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finished/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finished/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finished/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finished/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finished/.ipynb_checkpoints/Untitled-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finished/.ipynb_checkpoints/Untitled1-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finished/Untitled.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finished/Untitled1.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finished/checkpoint/best_model-2160.data-00000-of-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finished/checkpoint/best_model-2160.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finished/checkpoint/best_model-2160.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finished/checkpoint/best_model-2180.data-00000-of-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finished/checkpoint/best_model-2180.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finished/checkpoint/best_model-2180.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finished/checkpoint/best_model-2490.data-00000-of-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finished/checkpoint/best_model-2490.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finished/checkpoint/best_model-2490.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finished/checkpoint/best_model-2560.data-00000-of-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finished/checkpoint/best_model-2560.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finished/checkpoint/best_model-2560.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finished/checkpoint/best_model-2570.data-00000-of-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finished/checkpoint/best_model-2570.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finished/checkpoint/best_model-2570.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finished/checkpoint/best_model-3890.data-00000-of-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finished/checkpoint/best_model-3890.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finished/checkpoint/best_model-3890.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finished/checkpoint/best_model-3900.data-00000-of-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finished/checkpoint/best_model-3900.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finished/checkpoint/best_model-3900.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finished/checkpoint/best_model-4430.data-00000-of-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finished/checkpoint/best_model-4430.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finished/checkpoint/best_model-4430.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finished/checkpoint/best_model-4440.data-00000-of-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finished/checkpoint/best_model-4440.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finished/checkpoint/best_model-4440.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finished/checkpoint/best_model-4450.data-00000-of-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finished/checkpoint/best_model-4450.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finished/checkpoint/best_model-4450.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finished/checkpoint/checkpoint" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finished/dataset.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finished/genetic.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finished/graphs/events.out.tfevents.1561447194.iris" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finished/graphs/events.out.tfevents.1561447835.iris" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finished/graphs/events.out.tfevents.1561447959.iris" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finished/graphs/events.out.tfevents.1561453600.iris" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finished/graphs/events.out.tfevents.1561453788.iris" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finished/graphs/events.out.tfevents.1561454144.iris" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finished/graphs/events.out.tfevents.1561454156.iris" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finished/helpers.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finished/indicators.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finished/phrase.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finished/phrase1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finished/rawdata.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finished/sbi.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finished/smarttrade.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finished/toy.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/genetic_slides.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/starter/genetic.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/starter/helpers.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/starter/phrase.py" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/finished/genetic.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3">
+              <caret line="32" column="24" lean-forward="true" selection-start-line="32" selection-start-column="24" selection-end-line="32" selection-end-column="24" />
+              <folding>
+                <element signature="e#334#347#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/finished/phrase1.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1323">
+              <caret line="123" column="18" lean-forward="true" selection-start-line="123" selection-start-column="18" selection-end-line="123" selection-end-column="18" />
+              <folding>
+                <element signature="e#334#347#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/finished/indicators.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="885">
+              <caret line="59" column="57" lean-forward="true" selection-start-line="59" selection-start-column="12" selection-end-line="59" selection-end-column="57" />
+              <folding>
+                <element signature="e#0#12#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/finished/phrase.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="14" column="85" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="85" />
+              <folding>
+                <element signature="e#334#347#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/finished/helpers.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" column="34" lean-forward="true" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/finished/sbi.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret selection-end-line="4" selection-end-column="19" />
+              <folding>
+                <element signature="e#0#19#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>720</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/finished/sbi.py" />
+        <option value="$PROJECT_DIR$/finished/helpers.py" />
+        <option value="$PROJECT_DIR$/finished/phrase.py" />
+        <option value="$PROJECT_DIR$/finished/dataset.py" />
+        <option value="$PROJECT_DIR$/finished/toy.py" />
+        <option value="$PROJECT_DIR$/finished/rawdata.py" />
+        <option value="$PROJECT_DIR$/finished/indicators.py" />
+        <option value="$PROJECT_DIR$/finished/smarttrade.py" />
+        <option value="$PROJECT_DIR$/finished/genetic.py" />
+        <option value="$PROJECT_DIR$/finished/phrase1.py" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectConfigurationFiles">
+    <option name="files">
+      <list>
+        <option value="$PROJECT_DIR$/.idea/genetic.iml" />
+        <option value="$PROJECT_DIR$/.idea/misc.xml" />
+        <option value="$PROJECT_DIR$/.idea/modules.xml" />
+        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="821" />
+    <option name="y" value="27" />
+    <option name="width" value="960" />
+    <option name="height" value="1053" />
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="genetic" type="b2602c69:ProjectViewProjectNode" />
+              <item name="genetic" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="genetic" type="b2602c69:ProjectViewProjectNode" />
+              <item name="genetic" type="462c0819:PsiDirectoryNode" />
+              <item name="finished" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="restartRequiresConfirmation" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/finished" />
+      <recent name="$PROJECT_DIR$/finished/.ipynb_checkpoints" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Python.genetic">
+    <configuration name="genetic" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="genetic" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/finished" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/finished/genetic.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="indicators" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="genetic" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/finished" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/finished/indicators.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="phrase" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="genetic" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/finished" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/finished/phrase.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="smarttrade" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="genetic" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/finished" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/finished/smarttrade.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.genetic" />
+        <item itemvalue="Python.smarttrade" />
+        <item itemvalue="Python.indicators" />
+        <item itemvalue="Python.phrase" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1b243e5f-f75e-40a0-84d8-cef745ab917a" name="Default Changelist" comment="" />
+      <created>1561185017519</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1561185017519</updated>
+      <workItem from="1561185018923" duration="6353000" />
+      <workItem from="1561197177448" duration="8166000" />
+      <workItem from="1561269154055" duration="10264000" />
+      <workItem from="1561356646389" duration="4723000" />
+      <workItem from="1561399930559" duration="220000" />
+      <workItem from="1561445174369" duration="9127000" />
+    </task>
+    <task id="LOCAL-00001" summary="changes">
+      <created>1561457965906</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1561457965906</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="38853000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="27" width="1920" height="1053" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Favorites" order="0" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.26307365" />
+      <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Database Changes" order="0" />
+      <window_info anchor="bottom" id="Terminal" order="1" weight="0.32899022" />
+      <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="3" />
+      <window_info anchor="bottom" id="Python Console" order="4" weight="0.257329" />
+      <window_info anchor="bottom" id="Docker" order="5" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Message" order="6" />
+      <window_info anchor="bottom" id="Find" order="7" />
+      <window_info active="true" anchor="bottom" id="Run" order="8" visible="true" weight="0.33224756" />
+      <window_info anchor="bottom" id="Debug" order="9" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="10" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="11" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="12" />
+      <window_info anchor="right" id="Database" order="0" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="SciView" order="2" />
+      <window_info anchor="right" id="Ant Build" order="3" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="4" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="changes" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/genetic$phrase.coverage" NAME="phrase Coverage Results" MODIFIED="1561270627975" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/finished" />
+    <SUITE FILE_PATH="coverage/genetic$indicators.coverage" NAME="indicators Coverage Results" MODIFIED="1561447871397" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/finished" />
+    <SUITE FILE_PATH="coverage/genetic$smarttrade.coverage" NAME="smarttrade Coverage Results" MODIFIED="1561454152600" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/finished" />
+    <SUITE FILE_PATH="coverage/genetic$genetic.coverage" NAME="genetic Coverage Results" MODIFIED="1561457809047" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/finished" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/finished/.ipynb_checkpoints/phrase1.py" />
+    <entry file="file://$PROJECT_DIR$/finished/sbi.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="4" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/finished/phrase.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="14" column="85" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="85" />
+          <folding>
+            <element signature="e#334#347#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/finished/toy.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3651">
+          <caret line="2300" column="78" selection-start-line="2300" selection-start-column="78" selection-end-line="2300" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/finished/rawdata.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/finished/toy.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="269">
+          <caret line="6403" column="34" lean-forward="true" selection-start-line="6403" selection-start-column="34" selection-end-line="6403" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/finished/smarttrade.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="814">
+          <caret line="191" column="24" lean-forward="true" selection-start-line="191" selection-start-column="24" selection-end-line="191" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/finished/dataset.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="45" column="42" selection-start-line="45" selection-start-column="42" selection-end-line="45" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/finished/helpers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="34" lean-forward="true" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/finished/genetic.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3">
+          <caret line="32" column="24" lean-forward="true" selection-start-line="32" selection-start-column="24" selection-end-line="32" selection-end-column="24" />
+          <folding>
+            <element signature="e#334#347#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/finished/phrase1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1323">
+          <caret line="123" column="18" lean-forward="true" selection-start-line="123" selection-start-column="18" selection-end-line="123" selection-end-column="18" />
+          <folding>
+            <element signature="e#334#347#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/finished/indicators.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="885">
+          <caret line="59" column="57" lean-forward="true" selection-start-line="59" selection-start-column="12" selection-end-line="59" selection-end-column="57" />
+          <folding>
+            <element signature="e#0#12#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
