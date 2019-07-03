@@ -3,7 +3,7 @@ import numpy,math
 import pandas as pd
 import statistics
 import talib
-df1 = pd.read_csv("/root/alpha/git/mine/data_science/data/02JAN/SBIN.txt",sep=",",header=None)
+df1 = pd.read_csv("/root/alpha/git/mine/data_science/data/03JAN/SBIN.txt",sep=",",header=None)
 dfc = pd.DataFrame(df1[[6, 7]])
 dfc = dfc[1:180]
 dfc = pd.DataFrame(dfc)
@@ -24,9 +24,15 @@ class Phrase:
             self.characters.append(character)
         self.r1_avg_p = statistics.mean(df)
         self.count0 = 0
+
+    def set(self, contents):
+        self.characters = []
+        # append len(target) number of randomly chosen printable ASCII chars
+        for i in range(len(contents)):
+            character = contents[i]
+            self.characters.append(character)
     def getContents(self):
         return ''.join(self.characters)
-
     def getFitness(self):
         self.score = 0
         self.shares = 0
@@ -35,9 +41,8 @@ class Phrase:
         self.sell = 0
         self.sell_price = 0
         self.transaction = 0
-
+        # self.sl = 0
         for p in range(len(df) - 21):
-
             j = p + 20
             self.count0 = 0
             self.r1(j)
@@ -49,9 +54,8 @@ class Phrase:
             self.r7(j)
             brokerage = 40
 
-            # stoploss
+            if self.buy == 1 and self.sell == 0 and ((df[j] - self.buy_price) / self.buy_price) * 100 < (-1):
 
-            if self.buy == 1 and self.sell == 0 and ((df[j] - self.buy_price) / self.buy_price) * 100 < (-0.5):
                 # print("stoploss triggered")
                 self.buy = 0
                 if ((df[j] + self.buy_price) * lot_size * 0.06 < 40):
@@ -59,7 +63,7 @@ class Phrase:
                 self.score += ((df[j] - self.buy_price) * lot_size - brokerage)
                 self.transaction += 1
 
-            if self.buy == 0 and self.sell == 1 and ((self.sell_price - df[j]) / self.sell_price) * 100 < (-0.5):
+            if self.buy == 0 and self.sell == 1 and ((self.sell_price - df[j]) / self.sell_price) * 100 < (-1):
                 # print("stoploss triggered")
                 self.sell = 0
                 if ((df[j] + self.sell_price) * lot_size * 0.06 < 40):
@@ -67,23 +71,21 @@ class Phrase:
                 self.score = self.score + ((self.sell_price - df[j]) * lot_size) - brokerage
                 self.transaction += 1
 
-            brokerage = 40
-            if self.count0 > int(target / 4):
+            if self.count0 > (int(target / 4)):
 
                 if self.buy == 1 and self.sell == 0:
                     self.buy = 0
                     if ((df[j] + self.buy_price) * lot_size * 0.06 < 40):
                         brokerage = (df[j] + self.buy_price) * lot_size * 0.06
-                    self.score += ((df[j] - self.buy_price) * lot_size - brokerage)
+                    self.score += ((df[j] - self.buy_price) * lot_size) - brokerage
                     self.transaction += 1
-                    # print(self.characters,self.transaction)
 
                 elif self.sell == 0 and self.buy == 0:
                     self.sell = 1
                     self.sell_price = df[j]
 
 
-            elif self.count0 < int(target / 4):  # if self.characters[2] == '1':
+            elif self.count0 < (int(target / 4)):  # if self.characters[2] == '1':
 
                 if self.sell == 1 and self.buy == 0:
                     self.sell = 0
@@ -91,14 +93,13 @@ class Phrase:
                         brokerage = (df[j] + self.sell_price) * lot_size * 0.06
                     self.score = self.score + ((self.sell_price - df[j]) * lot_size) - brokerage
                     self.transaction += 1
-                    # print(self.characters, self.transaction)
+
 
                 elif self.sell == 0 and self.buy == 0:
                     self.buy = 1
                     self.buy_price = df[j]
 
         brokerage = 40
-
         if self.sell == 1 and self.buy == 0:
             self.sell = 0
             if ((df[j] + self.sell_price) * lot_size * 0.06 < 40):
@@ -113,19 +114,18 @@ class Phrase:
                 brokerage = (df[j] + self.buy_price) * lot_size * 0.06
             self.score += ((df[j] - self.buy_price) * lot_size - brokerage)
             self.transaction += 1
-            # print("sell:"+str(self.sell)+" buy:"+str(self.buy)+" sell_p: "+str(self.sell_price)+" buy_p: "+str(self.buy_price))
 
-    # create a child of two members of the current generation
+            # print("sell:"+str(self.sell)+" buy:"+str(self.buy)+" sell_p: "+str(self.sell_price)+" buy_p: "+str(self.buy_price))
+        # create a child of two members of the current generation
+
     def crossover(self, partner):
 
         # create a spot for the characters to go
         child = Phrase()
-
         # flip a coin for each character, selecting from one parent each time
         for i in range(len(self.characters)):
             if random.random() < 0.5:
                 child.characters[i] = self.characters[i]
-
         return child
 
     # some portion of the time, need some characters to randomly change
@@ -211,7 +211,7 @@ class Phrase:
 
     def r7(self, j):
         if (j > 20):
-            rsi = talib.RSI(df[0:j], timeperiod=6)
+            rsi = talib.RSI(df[0:j], timeperiod=12)
             # macd, signal, hist = talib.MACD((df[0:j]), fastperiod=12, slowperiod=26, signalperiod=9)
             # print(str(a) +" "+ str(b))
             if rsi[j - 1] > 70:
@@ -222,22 +222,3 @@ class Phrase:
                 # print(str(a) + str(b))
                 if self.characters[12] == '0':
                     self.count0 += 1
-
-    def crossover(self, partner):
-
-        # create a spot for the characters to go
-        child = Phrase()
-        # flip a coin for each character, selecting from one parent each time
-        for i in range(len(self.characters)):
-            if random.random() < 0.5:
-                child.characters[i] = self.characters[i]
-        return child
-
-    # some portion of the time, need some characters to randomly change
-    def mutate(self):
-
-        # less than 1% of the time, change a character into something else
-        for i in range(len(self.characters)):
-            # if i % 3 != 0:
-            if random.random() < 0.03:
-                self.characters[i] = chr(random.choice(range(48, 50)))

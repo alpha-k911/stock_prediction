@@ -3,7 +3,7 @@ import numpy,math
 import pandas as pd
 import statistics
 import talib
-df1 = pd.read_csv("/root/alpha/git/mine/data_science/data/02JAN/SBIN.txt",sep=",",header=None)
+df1 = pd.read_csv("/root/alpha/git/mine/data_science/data/04JAN/SBIN.txt",sep=",",header=None)
 dfc = pd.DataFrame(df1[[6, 7]])
 dfc = dfc[1:180]
 dfc = pd.DataFrame(dfc)

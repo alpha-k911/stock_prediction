@@ -1,6 +1,6 @@
 import random
-from main.phrase1 import Phrase,target,popSize,lot_size
-from main.helpers import summarize
+from script.phrase1 import Phrase,target,popSize,lot_size
+from script.helpers import summarize
 from sklearn.preprocessing import MinMaxScaler
 population = []
 bestScore = -111222
