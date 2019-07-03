@@ -41,44 +41,67 @@ class Phrase:
             self.r6(j)
             self.r7(j)
             brokerage = 40
-            if self.count0 > (target / 4):
+
+            if self.buy == 1 and self.sell == 0 and ((df[j] - self.buy_price) / self.buy_price) * 100 < (-1):
+
+                # print("stoploss triggered")
+                self.buy = 0
+                if ((df[j] + self.buy_price) * lot_size * 0.06 < 40):
+                    brokerage = (df[j] + self.buy_price) * lot_size * 0.06
+                self.score += ((df[j] - self.buy_price) * lot_size - brokerage)
+                self.transaction += 1
+
+            if self.buy == 0 and self.sell == 1 and ((self.sell_price - df[j]) / self.sell_price) * 100 < (-1):
+                # print("stoploss triggered")
+                self.sell = 0
+                if ((df[j] + self.sell_price) * lot_size * 0.06 < 40):
+                    brokerage = (df[j] + self.sell_price) * lot_size * 0.06
+                self.score = self.score + ((self.sell_price - df[j]) * lot_size) - brokerage
+                self.transaction += 1
+
+            if self.count0 > (int(target / 4)):
+
                 if self.buy == 1 and self.sell == 0:
                     self.buy = 0
-                    if (abs((df[j] + self.buy_price)) * lot_size * 0.06 < 40):
-                        brokerage = (df[j] - self.buy_price) * lot_size * 0.06
-                    self.score += ((df[j] - self.buy_price) * lot_size)
-                    self.score -= brokerage
+                    if ((df[j] + self.buy_price) * lot_size * 0.06 < 40):
+                        brokerage = (df[j] + self.buy_price) * lot_size * 0.06
+                    self.score += ((df[j] - self.buy_price) * lot_size) - brokerage
                     self.transaction += 1
-                elif self.buy == 0 and self.buy == 0:
+
+                elif self.sell == 0 and self.buy == 0:
                     self.sell = 1
                     self.sell_price = df[j]
-            elif self.count0 < (target / 4):   # if self.characters[2] == '1':
+
+
+            elif self.count0 < (int(target / 4)):  # if self.characters[2] == '1':
+
                 if self.sell == 1 and self.buy == 0:
                     self.sell = 0
-                    if (abs((df[j] + self.sell_price)) * lot_size * 0.06 < 40):
-                        brokerage = (df[j] - self.sell_price) * lot_size * 0.06
-                    self.score -= ((df[j] - self.sell_price) * lot_size)
-                    self.score -= brokerage
+                    if ((df[j] + self.sell_price) * lot_size * 0.06 < 40):
+                        brokerage = (df[j] + self.sell_price) * lot_size * 0.06
+                    self.score = self.score + ((self.sell_price - df[j]) * lot_size) - brokerage
                     self.transaction += 1
+
+
                 elif self.sell == 0 and self.buy == 0:
                     self.buy = 1
                     self.buy_price = df[j]
+
         brokerage = 40
         if self.sell == 1 and self.buy == 0:
             self.sell = 0
-            if (abs((df[j] + self.sell_price)) * lot_size * 0.06 < 20):
-                brokerage = (df[j] - self.sell_price) * lot_size * 0.06
-            self.score -= ((df[j] - self.sell_price) * lot_size)
-            self.score -= brokerage
-            self.transaction += 1
+            if ((df[j] + self.sell_price) * lot_size * 0.06 < 40):
+                brokerage = (df[j] + self.sell_price) * lot_size * 0.06
+            self.score = self.score + ((self.sell_price - df[j]) * lot_size) - brokerage
+            self.transaction += 1;
+
+
         elif self.buy == 1 and self.sell == 0:
             self.buy = 0
-            if (abs((df[j] + self.buy_price)) * lot_size * 0.06 < 20):
-                brokerage = (df[j] - self.sell_price) * lot_size * 0.06
-            self.score += ((df[j] - self.buy_price) * lot_size)
-            self.score -= brokerage
+            if ((df[j] + self.buy_price) * lot_size * 0.06 < 40):
+                brokerage = (df[j] + self.buy_price) * lot_size * 0.06
+            self.score += ((df[j] - self.buy_price) * lot_size - brokerage)
             self.transaction += 1
-
 
     def r1(self, j):
         if j>0:
@@ -174,9 +197,9 @@ class Phrase:
 
 
 if __name__ == "__main__":
-    df1 = pd.read_csv("/root/alpha/git/mine/data_science/data/04JAN/SBIN.txt",sep=",", header=None)
+    df1 = pd.read_csv("/root/alpha/git/mine/data_science/data/02JAN/SBIN.txt",sep=",", header=None)
     dfc = pd.DataFrame(df1[[6, 7]])
-    dfc = dfc[180:376]
+    dfc = dfc[181:376]
     dfc = pd.DataFrame(dfc)
     dfc.reset_index(inplace=True)
     df = dfc[6]
@@ -189,7 +212,7 @@ if __name__ == "__main__":
     target = 14
     popSize = 100
     c1 = 0
-    lot_size = 100
+    lot_size = 500
     # rule = "01011101011101"
     rule = input("Rule: ")
     ph = Phrase(rule)
